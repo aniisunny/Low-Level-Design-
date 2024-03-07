@@ -32,10 +32,8 @@ public class Board {
                 System.out.print(specialEntities.get(position).getID());
             }
 
-            System.out.println(" |");
-
             if (position % dimensions == 1) {
-                System.out.println();
+                System.out.println("|");
             }
         }
     }
@@ -51,13 +49,16 @@ public class Board {
     }
 
     public boolean hasSpecialEntity(int position) {
+
         return specialEntities.containsKey(position);
     }
 
     public SpecialEntity getspecialEntityPosition(int position) {
+
         if(hasSpecialEntity(position)) {
             return specialEntities.get(position);
         } 
+
         return null;
     }
 

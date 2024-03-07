@@ -3,14 +3,8 @@ package src;
 import java.util.Random;
 
 public class Dice {
-
-    private static final int MAX_VALUE = 6;
     
     private int maxValue;
-
-    public Dice() {
-        this.maxValue = MAX_VALUE;
-    }
 
     public Dice(int maxValue) {
         this.maxValue = maxValue;
