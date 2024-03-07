@@ -31,7 +31,6 @@ public class Game {
 
             if (player.getPosition() == board.getTotalCells()) {
                 System.out.println(player.getPlayerName() + " has completed the game!");
-                break;
             }
             else {
                 players.offer(player);
